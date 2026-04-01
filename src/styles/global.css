@@ -613,3 +613,102 @@
       grid-template-columns: 1fr;
     }
   }
+  /* Gallery Page */
+.gallery-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80');
+  }
+  
+  .gallery-intro-text {
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+  }
+  
+  .main-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .gallery-card {
+    min-height: 260px;
+    background: linear-gradient(135deg, #efefef, #d9d9d9);
+    border: 1px solid var(--border-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  }
+  
+  .gallery-card.large {
+    min-height: 360px;
+  }
+  
+  /* Gallery Highlights */
+  .gallery-highlights-section {
+    background-color: var(--light-gray);
+  }
+  
+  .gallery-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .gallery-highlight-card {
+    background-color: var(--white);
+    border-top: 5px solid var(--primary-red);
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+  
+  .gallery-highlight-card h3 {
+    margin-bottom: 0.8rem;
+    color: var(--dark);
+  }
+  
+  .gallery-highlight-card p {
+    color: var(--text-gray);
+  }
+  
+  /* Gallery CTA */
+  .gallery-cta {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 5rem 2rem;
+  }
+  
+  .gallery-cta-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .gallery-cta-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gallery-cta-content p {
+    color: #e8e8e8;
+    margin: 0 auto 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1000px) {
+    .gallery-highlights-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-gallery-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .gallery-card.large {
+      min-height: 260px;
+    }
+  }
