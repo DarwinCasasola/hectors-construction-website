@@ -496,3 +496,120 @@
       grid-template-columns: 1fr;
     }
   }
+  /* About Page */
+.about-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80');
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .about-text p {
+    margin-bottom: 1.25rem;
+    color: var(--text-gray);
+  }
+  
+  .about-image-box {
+    min-height: 380px;
+    background: linear-gradient(135deg, #efefef, #d8d8d8);
+    border: 1px solid var(--border-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #666;
+  }
+  
+  /* Values */
+  .about-values-section {
+    background-color: var(--light-gray);
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .value-card {
+    background-color: var(--white);
+    border-top: 5px solid var(--accent-orange);
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+  
+  .value-card h3 {
+    color: var(--primary-red);
+    margin-bottom: 0.8rem;
+  }
+  
+  .value-card p {
+    color: var(--text-gray);
+  }
+  
+  /* Why Choose Us */
+  .choose-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .choose-us-item {
+    border: 1px solid var(--border-gray);
+    padding: 2rem;
+    background-color: var(--white);
+  }
+  
+  .choose-us-item span {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent-orange);
+    margin-bottom: 1rem;
+  }
+  
+  .choose-us-item h3 {
+    margin-bottom: 0.75rem;
+    color: var(--dark);
+  }
+  
+  .choose-us-item p {
+    color: var(--text-gray);
+  }
+  
+  /* About CTA */
+  .about-cta {
+    background: linear-gradient(135deg, var(--primary-red), var(--accent-orange));
+    color: var(--white);
+    padding: 5rem 2rem;
+  }
+  
+  .about-cta-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-cta-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-cta-content p {
+    color: var(--white);
+    margin: 0 auto 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1000px) {
+    .about-grid,
+    .values-grid,
+    .choose-us-grid {
+      grid-template-columns: 1fr;
+    }
+  }
